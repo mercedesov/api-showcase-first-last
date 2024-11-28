@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rick and Morty Characters</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Rick and Morty Character Explorer</h1>
+    <nav>
+      <button id="view-main">View All Characters</button>
+      <button id="view-favorites">View Favorites</button>
+    </nav>
+  </header>
+  <main>
+    <!-- Loading Indicator -->
+    <div id="loading" class="loading hidden">Loading...</div>
+
+    <!-- Character List -->
+    <div id="main-list" class="list-container"></div>
+
+    <!-- Favorites List -->
+    <div id="favorites-list" class="list-container hidden"></div>
+
+    <!-- Detailed Character View -->
+    <div id="item-details" class="details-container hidden">
+      <button id="back-button" class="back-button">Back to List</button>
+      <div id="details-container"></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
